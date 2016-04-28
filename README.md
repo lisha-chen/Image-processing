@@ -1,11 +1,12 @@
 # Image-Thresholding
 convert color image or gray image to binary image
 
-1. Introduction.
+Introduction.
 
 Image Thresholding methods based on papers written in matlab.
 
-2. References.
+References.
+
 If you use the Toolbox, we appreciate it if you cite an appropriate subset of the following papers:
 
 J. M. S. Prewitt and M. L. Mendelsohn, "The analysis of cell images," innnals of the New York Academy of Sciences, vol. 128, pp. 1035-1053, 1966.
@@ -26,16 +27,23 @@ Sezgin M. and Sankur B. (2004) "Survey over Image Thresholding Techniques and Qu
 
 
 
-3. Usage.
+Usage.
+
  The main function is im2binary.
+ 
 The first parameter is the input image.
+
 The last parameter is the method you choose.
+
 All methods except for P_Tile have 2 parameters.
+
 P_Tile requires an additional P which ranges from 0 to 1 
 to determine the percent of foreground pixels and background pixels.
 
 example:
+
 output=im2binary(I,0.5,'P_Tile');
+
 output=im2binary(I,'momentPreserving');
 
 ###################################################################
